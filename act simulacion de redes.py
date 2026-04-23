@@ -29,19 +29,19 @@ servidor.agregar_conexion(cliente2)
 servidor.agregar_conexion(cliente3)
 
 
-servidor.enviar_mensaje("Hola clientes, este es el servidor")
+servidor.enviar_mensaje("hola clientes, este es el servidor")
 
 time.sleep(2)
-print("\nSimulando desconexión y reconexión dinámica...")
+print("\nSimulando desconexiony reconexion dinamica")
 
 servidor.eliminar_conexion(cliente2)
 
 # Enviar mensaje (cliente2 no recibe)
-servidor.enviar_mensaje("Cliente 2 está desconectado")
+servidor.enviar_mensaje("cliente 2 esta desconectado")
 
 # Simular reconexión
 time.sleep(2)
 servidor.agregar_conexion(cliente2)
 
 # Mensaje final
-servidor.enviar_mensaje("¡Hola de nuevo a todos!")
+servidor.enviar_mensaje("hola de nuevo a todos")
